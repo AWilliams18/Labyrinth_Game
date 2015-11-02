@@ -27,6 +27,7 @@ public class LabyrinthGameState extends GameState {
 
     public LabyrinthGameState (LabyrinthGameState toCopy) {
         currentPlayer = toCopy.currentPlayer;
-
+        extraTile = new Tile(toCopy.extraTile);
+        //for(int i = 0; i < 7; i++)
     }
 }
