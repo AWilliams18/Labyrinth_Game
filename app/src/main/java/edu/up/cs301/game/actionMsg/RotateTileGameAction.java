@@ -1,10 +1,10 @@
 package edu.up.cs301.game.actionMsg;
 
 import edu.up.cs301.game.GamePlayer;
-import java.io.Serializable;
 
 /**
- * Created by Ben Rumptz on 11/1/2015.
+ * @author Ben Rumptz
+ * @version 11/1/15
  */
 public class RotateTileGameAction extends GameAction {
 
