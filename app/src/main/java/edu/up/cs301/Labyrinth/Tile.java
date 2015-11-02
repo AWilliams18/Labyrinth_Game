@@ -23,10 +23,48 @@ public class Tile {
     private boolean player3present;
     private boolean player4present;
 
-    private Tile tileupwards;
-    private Tile tileDownwards;
-    private Tile tileRightwards;
-    private Tile likeLeftWards;
+    private Tile tileUpwards = null;
+    private Tile tileDownwards = null;
+    private Tile tileRightwards = null;
+    private Tile tileLeftWards = null;
 
     private String treasure;
+
+    //creates a new tile with default values
+    public Tile() {
+        type = Tile.LINE;
+        rotation = Tile.UP;
+        player1present = false;
+        player2present = false;
+        player3present = false;
+        player4present = false;
+
+        treasure = null;
+    }
+
+    //creates a new tile with passed in properties
+    public Tile(int initType, int initRotation, boolean initP1, boolean initP2,
+                 boolean initP3, boolean initP4, String initTreasure) {
+        type = initType;
+        rotation = initRotation;
+        player1present = initP1;
+        player2present = initP2;
+        player3present = initP3;
+        player4present = initP4;
+
+        treasure = initTreasure;
+    }
+
+    //creates a copy of passed tile
+    public Tile(Tile toCopy) {
+        type = toCopy.type;
+        rotation = toCopy.rotation;
+
+        player1present = toCopy.player1present;
+        player2present = toCopy.player2present;
+        player3present = toCopy.player3present;
+        player4present = toCopy.player4present;
+
+        treasure = toCopy.treasure;
+    }
 }
