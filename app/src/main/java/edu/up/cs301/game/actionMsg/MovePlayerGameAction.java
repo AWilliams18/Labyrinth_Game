@@ -19,4 +19,7 @@ public class MovePlayerGameAction extends GameAction {
         xLoc = x;
         yLoc = y;
     }
+
+    public int getX(){ return xLoc; }
+    public int getY(){ return yLoc; }
 }
