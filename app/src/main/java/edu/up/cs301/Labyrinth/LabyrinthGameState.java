@@ -13,4 +13,20 @@ public class LabyrinthGameState extends GameState {
     private String[] player2Targets;
     private String[] player3Targets;
     private String[] player4Targets;
+
+    //creates a new gameState
+    public LabyrinthGameState () {
+        currentPlayer = 0;
+        gameTiles = new Tile[7][7];
+        extraTile = new Tile();
+        player1Targets = new String[4];
+        player2Targets = new String[4];
+        player3Targets = new String[4];
+        player4Targets = new String[4];
+    }
+
+    public LabyrinthGameState (LabyrinthGameState toCopy) {
+        currentPlayer = toCopy.currentPlayer;
+
+    }
 }
