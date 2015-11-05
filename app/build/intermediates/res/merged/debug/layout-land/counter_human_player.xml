@@ -53,4 +53,4 @@
         android:onClick="doFinish"
         android:text="Done" />
 
-</RelativeLayout><!-- From: file:/C:/Users/Brendan/Desktop/Misc.%20Files/Programs/Labryinth/new_labrynth/Labyrinth_Game/app/src/main/res/layout-land/counter_human_player.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/thomasb18/Documents/Labyrinth_Game/app/src/main/res/layout-land/counter_human_player.xml -->
